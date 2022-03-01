@@ -1,0 +1,301 @@
+/* Style the video: 100% width and height to cover the entire window */
+
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    // position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+// section {
+//     height: 100vh;
+
+// }
+.main {
+    height: 100vh;
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        
+      }
+      .hero {
+          width: 100%;
+          position: absolute; 
+          display: flex;
+          justify-content: center;
+          .container {
+              height: 100vh;
+              // position: absolute;
+              z-index: 10;
+              display: flex;
+              align-items: center;
+              .text_hero {
+                  width: 50%;
+                  color: #fff;
+                  h1 {
+                      font-family: $title-font;
+                      font-size: 4.5em;
+                      font-weight: bold;
+                      span {
+                          color: $color-verde;
+                        }
+                    }
+                    p {
+                      font-size: 24px;
+                  }
+              }
+              .form {
+                  width: 50%;
+                  margin-top: 50px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-end;
+                  .container_form {
+                      padding: 15px;
+                      border-radius: 10px;
+                      background-color: #fff;
+                      width: 80%;
+                      opacity: 0.8;
+                      &:hover {
+                          opacity: 1;
+                      }
+                      .title_form{
+                          @include subtitle;
+                      }
+                      .form-principal {
+                          display: flex;
+                          flex-direction: column;
+                          input, textarea {
+                              margin: 10px 0;
+                              padding: 10px;
+                              border: solid 1px $color-cyan;
+                              border-radius: 5px;
+                              &:active, :focus {
+                                  border: solid 2px $color-verde ;
+                              }
+                          }
+                          textarea {
+                              resize: none;
+                          }
+                          input[type="submit"] {
+                              background-color: $color-verde;
+                              color: #fff;
+                              font-weight: bold;
+                              border: none;
+                              transition: 0.3s ease-in-out;
+                              &:hover {
+                                  background-color: #00633C;
+                                  transition: 0.3s ease-in-out;
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      } 
+}
+.contenido {
+    // display: none;
+    background-color: #fff;
+    // height: 100vh;
+    margin-top: 10vh;
+    width: 100%;
+    z-index: 9899;
+    .contenido_bloque {
+        background-color: $color-gris;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        padding: 100px 100px 50px 100px;
+        margin-top: -50px;
+        .row_bloque {
+            display: flex;
+            .bloque {
+                width: 50%;
+                padding: 40px;
+                .titulo_bloque {
+                    padding: 0;
+                }
+                .texto_bloque {
+                    margin-top: 20px;
+                }
+            }
+            .titulo_bloque {
+                @include subtitle;
+                font-family: 'CenturyGothic';
+                padding: 40px;
+            }
+        }
+    }
+}
+.servicios {
+    // display: none;
+    background-color: #fff;
+    z-index: 9899;
+    background-image: url("../img/dots-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: center;
+    .servicios_row {
+        justify-content: space-evenly;
+        display: flex;
+        &:first-child {
+            margin-top: -50px;
+        }
+        .servicios_card {
+            width: 22%;
+            height: 440px;
+            background-color: #fff;
+            min-width: 200px;
+            padding: 50px;
+            margin-bottom: 50px;
+            box-shadow: $shadow;
+            img {
+                width: 80px;
+                margin-bottom: 15px;
+            }
+            .title_card {
+                font-weight: bold;
+                font-size: 22px;
+                margin-bottom: 15px;
+            }
+            .text_card {
+                margin-bottom: 15px;
+                line-height: 18px;
+            }
+            .boton {
+                color: $color-verde;
+                font-weight: bold;
+                font-size: 12px;
+                img{
+                    width: 20px;
+                    margin: 0 ;
+                }
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+.banner_publicidad {
+    background-color: $color-verde;
+    height: 50vh;
+    width: 100%;
+    z-index: 9799;
+}
+.clientes {
+    background-color: #fff;
+    width: 100%;
+    padding: 50px 0;
+    z-index: 9699;
+    .container {
+        .titulo_clientes {
+            @include subtitle;
+        }
+        .clientes-row {
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-around;
+            align-items:center;
+            .logos-clientes {
+                width: 150px;
+                margin: 25px;
+                img {
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+.footer {
+    background-color: $color-azul;
+    width: 100%;
+    // margin-bottom: 50px;
+    padding: 50px 0;
+    z-index: 9699;
+    .container {
+        display: flex;
+        .footer-item {
+            color: #fff;
+            width: 40%;
+            &:first-child {
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .logo-footer {
+                width: 100px;
+            }
+            .social {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 20px;
+                img {
+                    width: 30px;
+                }
+            }
+            .subtitulo {
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .titulo {
+                font-size: 28px;
+                font-weight: bold;
+            }
+            .texto {
+                margin-bottom: 20px;
+            }
+            .email {
+                font-size: 28px;
+                font-weight: bold;
+                background: #FFFFFF;
+                background: -webkit-linear-gradient(to right, #FFFFFF 0%, #34CED8 50%, #34CED8 100%);
+                background: -moz-linear-gradient(to right, #FFFFFF 0%, #34CED8 50%, #34CED8 100%);
+                background: linear-gradient(to right, #FFFFFF 0%, #34CED8 50%, #34CED8 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                &:hover {
+                    background: #FFFFFF;
+                    background: -webkit-linear-gradient(to right, #34CED8 0%, #ffffff 50%, #ffffff 100%);
+                    background: -moz-linear-gradient(to right, #34CED8 0%, #ffffff 50%, #ffffff 100%);
+                    background: linear-gradient(to right, #34CED8 0%, #ffffff 50%, #ffffff 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            .whatsapp {
+                display: flex;
+                img {
+                    width: 25px;
+                    margin-right: 10px;                }
+            }
+        }
+    }
+}
+

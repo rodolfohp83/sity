@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url('SansSerifBldFLF.eot');
+  src: url('SansSerifBldFLF.eot?#iefix') format('embedded-opentype'),
+       url('SansSerifBldFLF.svg#SansSerifBldFLF') format('svg'),
+       url('SansSerifBldFLF.ttf') format('truetype'),
+       url('SansSerifBldFLF.woff') format('woff'),
+       url('SansSerifBldFLF.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url('SansSerifBookFLF.eot');
+  src: url('SansSerifBookFLF.eot?#iefix') format('embedded-opentype'),
+       url('SansSerifBookFLF.svg#SansSerifBookFLF') format('svg'),
+       url('SansSerifBookFLF.ttf') format('truetype'),
+       url('SansSerifBookFLF.woff') format('woff'),
+       url('SansSerifBookFLF.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CenturyGothic';
+  src: url('SansSerifFLF.eot');
+  src: url('SansSerifFLF.eot?#iefix') format('embedded-opentype'),
+       url('SansSerifFLF.svg#SansSerifFLF') format('svg'),
+       url('SansSerifFLF.ttf') format('truetype'),
+       url('SansSerifFLF.woff') format('woff'),
+       url('SansSerifFLF.woff2') format('woff2');
+  font-weight: lighter;
+  font-style: normal;
+}
+

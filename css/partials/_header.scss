@@ -1,0 +1,62 @@
+/*======================================================
+                        HEADER
+======================================================*/
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    background-color: #ffffff;
+    display: flex;
+    .container {
+        display: flex;
+        padding: 0;
+        .logo {
+            width: 100px;
+            padding: 10px 10px 10px 0px;
+            transition: 0.3s ease-in-out;
+        }
+        .menu {
+            width: calc(100%);
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            .nav-item {
+                margin: 0 10px;
+                color:$color-azul;
+                font-weight: bold;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        } 
+    }
+        .phone {
+            background-color: $color-verde;
+            display: flex;
+            padding: 10px;
+            align-items: center;
+            position: absolute;
+            right: 0;
+            height: 100%;
+            color: #fff;
+            img {
+                width: 20px;
+                margin-right: 10px;
+            }
+        }
+    
+}
+
+.nav-item .nav-link {
+    display: inline-block; 
+    color: #ffffff !important; 
+    border: solid 1px red;
+}
+.active {
+    box-shadow: $shadow;
+    transition: 0.3s ease-out background-color;
+   
+}
+/*======================================================
+                        Navbar
+======================================================*/

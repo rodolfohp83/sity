@@ -1,0 +1,49 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+	height: 100%;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+	font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	scroll-behavior: smooth;
+}
+body{
+	font-family: 'CenturyGothic';
+	font-weight: normal;
+	margin:0;
+	background: #FCFCFC;
+	color: $color-azul;
+	overflow-x: hidden;
+	img {
+		width: 100%;
+	}
+	.desktop {
+		display: block;
+	}
+	.mobile {
+		display: none;
+	}
+	a {
+		color: inherit;
+	}
+	.scroll-up {
+        background: url("../img/scroll-up.svg");
+        background-size: contain;
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        right: 40px;
+        bottom: 40px;
+        z-index: 9999;
+        transition: 0.3s;
+        &:hover {
+            transform: scale(1.5);
+            transition: 0.3s;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+
+$color-azul:#252B42;
+$color-cyan:#2091F9;
+$color-verde:#00AF6A;
+$color-gris:#F2F1F6;
+
+$title-font: 'FuturaDemiBold';
+
+$shadow: 0 5px 10px #33333338;
+
+@mixin subtitle {
+    color:$color-azul;
+    font-family: $title-font;
+    font-size: 34px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    line-height: 60px;
+    display: flex;
+    flex-direction: column-reverse;
+    &::after {
+        content: '';
+        position: absolute;
+        height: 5px;
+        width: 100%;
+        background-image: url("../img/line-cyan.svg");
+        background-repeat: no-repeat;
+        
+    }
+}
